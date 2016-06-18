@@ -1,0 +1,51 @@
+{
+  "name": "obj-denied",
+  "version": "1.0.0",
+  "description": "Check if the required properties are set, the easy way!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./test/ --recursive",
+    "lint": "$(npm bin)/eslint .",
+    "eslint-pre-commit": "./scripts/eslint-pre-commit",
+    "auto-test": "nodemon --ignore coverage/ -x \"npm test && npm run lint\""
+  },
+  "pre-commit": [
+    "eslint-pre-commit",
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github-geex:Geexteam/obj-denied.git"
+  },
+  "keywords": [
+    "obj-denied",
+    "denied",
+    "if-else",
+    "object",
+    "es6",
+    "deny",
+    "error",
+    "null",
+    "undefined",
+    "object-has-properties"
+  ],
+  "author": "Renzo Roso <renzo@geex.company>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Geexteam/obj-denied/issues"
+  },
+  "homepage": "https://github.com/Geexteam/obj-denied#readme",
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-filenames": "^0.2.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "pre-commit": "^1.1.2",
+    "should": "^8.3.1"
+  }
+}
