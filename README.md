@@ -1,6 +1,10 @@
 # obj-denied #
 Check if the required properties are set, the easy way!
 
+[![Build Status](https://travis-ci.org/Geexteam/obj-denied.svg?branch=master)](https://travis-ci.org/Geexteam/obj-denied)
+[![Dependency Status](https://gemnasium.com/badges/github.com/Geexteam/obj-denied.svg)](https://gemnasium.com/github.com/Geexteam/obj-denied)
+[![NSP Status](https://nodesecurity.io/orgs/geex-team/projects/00e3904b-d933-4ac3-b865-44584dd62b4e/badge)](https://nodesecurity.io/orgs/geex-team/projects/00e3904b-d933-4ac3-b865-44584dd62b4e)
+
 ## Requirements ##
 To use this module, the following is required:
 
